@@ -2,14 +2,12 @@ class Triangle implements Geometric {
    private int base;
    private int oneSide;
    private int twoSide;
-   private int height;
    private String backgroundColor;
    private String borderColor;
 
-    public Triangle(int base, int height, int oneSide, int twoSide, String borderColor, String backgroundColor) {
+    public Triangle(int base, int oneSide, int twoSide, String borderColor, String backgroundColor) {
         this.borderColor = borderColor;
         this.base = base;
-        this.height = height;
         this.backgroundColor = backgroundColor;
     }
     @Override
@@ -19,7 +17,8 @@ class Triangle implements Geometric {
 
     @Override
     public double getSquare() {
-        return (height*base)/2;
+        double p = getPerimeter() / 2.0;
+        return Math.sqrt(p * (p - oneSide) * (p - twoSide) * (p - base));
     }
 
     @Override

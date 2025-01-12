@@ -1,11 +1,11 @@
 public interface Geometric {
-    double getPerimeter();
+     double getPerimeter();
 
-    double getSquare();
+     double getSquare();
 
-    String getBackgroundColor();
+     String getBackgroundColor();
 
-    String getBorderColor();
+     String getBorderColor();
 
     default void printCharacteristics() {
         System.out.println("Периметр: " + getPerimeter());

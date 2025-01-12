@@ -5,9 +5,9 @@ public class Main {
         Cat cat1 = new Cat("Лор");
         Cat cat2 = new Cat("Рома");
         Cat cat3 = new Cat("Доген");
-        System.out.println("Всего животных:" + Animal.getAnimalCount());
-        System.out.println("Всего собак" + Dog.getDogCount());
-        System.out.println("Всего кошек" + Cat.getCatCount());
+        System.out.println("Всего животных: " + Animal.getAnimalCount());
+        System.out.println("Всего собак: " + Dog.getDogCount());
+        System.out.println("Всего кошек: " + Cat.getCatCount());
         dog1.run(300);
         dog1.swim(5);
 
@@ -39,7 +39,7 @@ public class Main {
         System.out.println("Осталось еды в миске: " + dish.getFood() + " ед.");
 
         Geometric circle = new Circle(10, "Желтый", "Красный");
-        Geometric triangle = new Triangle(10,5,7,8, "Синий", "Фиолетовый");
+        Geometric triangle = new Triangle(10,5,7, "Синий", "Фиолетовый");
         Geometric rectangle = new Rectangle(10,15,"Зеленый", "Голубой");
         System.out.println("Круг:");
         circle.printCharacteristics();
