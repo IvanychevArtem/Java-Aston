@@ -6,9 +6,12 @@ class Triangle implements Geometric {
    private String borderColor;
 
     public Triangle(int base, int oneSide, int twoSide, String borderColor, String backgroundColor) {
+        this.twoSide = twoSide;
         this.borderColor = borderColor;
         this.base = base;
         this.backgroundColor = backgroundColor;
+        this.oneSide = oneSide;
+
     }
     @Override
     public double getPerimeter() {

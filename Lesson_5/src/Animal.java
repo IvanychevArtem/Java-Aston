@@ -1,6 +1,6 @@
 public abstract class Animal {
-    public String name;
-    public static int animalCount = 0;
+    protected String name;
+    protected static int animalCount = 0;
 
     public Animal(String name) {
         this.name = name;
