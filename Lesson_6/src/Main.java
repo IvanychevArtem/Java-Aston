@@ -11,8 +11,8 @@ public class Main {
 
 
         try {
-            ArrayException.twoDimensionalArray(correctArray);
-        } catch (MyArraySizeExceptoin | MyArrayDataException e) {
+            ArrayExceptions.twoDimensionalArray(correctArray);
+        } catch (MyArraySizeException | MyArrayDataException e) {
             System.out.println(e.getMessage());
         }
 

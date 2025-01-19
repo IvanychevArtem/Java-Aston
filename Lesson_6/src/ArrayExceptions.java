@@ -1,12 +1,12 @@
-class ArrayException {
+public class ArrayExceptions {
 
-    public static void twoDimensionalArray(String[][] twomas) throws MyArrayDataException, MyArraySizeExceptoin {
+    public static void twoDimensionalArray(String[][] twomas) throws MyArrayDataException, MyArraySizeException {
         for (int i = 0; i < twomas.length; i++) {
                 if (twomas.length != 4) {
-                    throw new MyArraySizeExceptoin("Массив неправильного размера");
+                    throw new MyArraySizeException("Массив неправильного размера");
                 }
                 if (twomas[i].length != 4) {
-                    throw new MyArraySizeExceptoin("Массив неправильного размера");
+                    throw new MyArraySizeException("Массив неправильного размера");
                 }
 
         }
@@ -20,7 +20,7 @@ class ArrayException {
                 }
             }
         }
-        System.out.println("Array sum is: " + sum);
+        System.out.println("Сумма массива: " + sum);
 
 
     }
