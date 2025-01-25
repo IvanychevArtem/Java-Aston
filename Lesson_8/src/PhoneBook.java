@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class PhoneBook {
-    static Map<String, List<String>> phone = new HashMap<>();
+    private static Map<String, List<String>> phone = new HashMap<>();
 
     public static void add(String name, String number) {
         List<String> numbers = phone.computeIfAbsent(name, k -> new ArrayList<>());
