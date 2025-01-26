@@ -10,5 +10,6 @@ public class Main {
 
         System.out.println(PhoneBook.get("Сидоров"));
         System.out.println(PhoneBook.get("Иванов"));
+        System.out.println(PhoneBook.get("Петров"));
     }
 }
