@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="MySuite">
+    <test name="MajorTests">
+        <groups>
+            <run>
+                <include name="Major"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.example.FactorialTest"/>
+        </classes>
+    </test>
+</suite>
