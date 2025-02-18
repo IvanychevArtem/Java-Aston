@@ -27,6 +27,6 @@ class FactorialTest {
 
     @Test
     void testNegativeNumber() {
-        assertEquals(0, Factorial.factorial(-1), "Факториал отрицательных чисел должен быть 0");
+        assertThrows(IllegalArgumentException.class, () -> Factorial.factorial(-5));
     }
 }

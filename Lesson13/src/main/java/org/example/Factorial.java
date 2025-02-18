@@ -2,13 +2,9 @@ package org.example;
 
 public class Factorial {
     public static long factorial(int n) {
-        if (n < 0) {
-            System.out.println("Факториал не определен для отрицательных чисел");
-            return 0;
-        }
 
-        if (n == 0 || n == 1) {
-            return 1;
+        if(n < 0) {
+            throw new IllegalArgumentException("Факториал не определен для отрицательных чисел");
         }
 
         long result = 1;
