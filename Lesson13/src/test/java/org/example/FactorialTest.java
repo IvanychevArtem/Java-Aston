@@ -1,7 +1,10 @@
 package org.example;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertThrows;
 
 public class FactorialTest {
 
@@ -17,16 +20,19 @@ public class FactorialTest {
     public void testFactorial(int input, int expected) {
         assertEquals(Factorial.factorial(input), expected);
     }
+
     @Test
-    public void testFactorialNumber(){
-        assertEquals(Factorial.factorial(-1), 0, "Факториал не определен для отрицательных чисел");
+    public void testFactorialNumber() {
+        assertThrows(IllegalArgumentException.class ,() -> Factorial.factorial(-5));
     }
+
     @Test(groups = "Major")
-    public void testFactorialFive(){
+    public void testFactorialFive() {
         assertEquals(Factorial.factorial(5), 120, "Факториал 5 должен быть 120");
     }
+
     @Test(groups = "Major")
-    public void testFactorialTen(){
+    public void testFactorialTen() {
         assertEquals(Factorial.factorial(10), 3628800, "Факториал 10 должен быть 3628800");
     }
 }
