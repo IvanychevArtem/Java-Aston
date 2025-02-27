@@ -21,7 +21,12 @@
             <artifactId>selenium-java</artifactId>
             <version>4.28.1</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>5.10.3</version>
+            <scope>compile</scope>
+        </dependency>
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
@@ -38,3 +43,6 @@
 
 
 </project>
+
+
+
